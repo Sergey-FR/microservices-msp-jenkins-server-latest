@@ -19,6 +19,7 @@ sudo systemctl start jenkins
 sudo systemctl enable jenkins
 # install docker
 sudo amazon-linux-extras install docker -y
+sudo chmod 777 /var/run/docker.sock
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo usermod -a -G docker ec2-user
